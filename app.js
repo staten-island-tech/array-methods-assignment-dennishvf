@@ -40,4 +40,9 @@ const Salmon = {
 };
 let animals = [Elephants, Lemurs, Lizards, Penguins, Salmon];
 animals.forEach((animal) => console.log(animal.Name));
-animals.forEach((animal)=>console.log(animal.Name,animal.foods,))
+animals.forEach((animal)=>console.log(animal.Name,animal.foods,));
+const foods = ["insects","Fish","Snow","fruits","leaves","grass",];
+function filtering() {foods.filter(foods("insects"));
+return foods.filter}
+
+console.log()
