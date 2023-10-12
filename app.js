@@ -42,6 +42,6 @@ let animals = [Elephants, Lemurs, Lizards, Penguins, Salmon];
 animals.forEach((animal) => console.log(animal.Name));
 animals.forEach((animal)=>console.log(animal.Name,animal.foods,));
 const diet = animals.filter(animal => {
-  return animal.foods.includes("Insects");
+  return animal.foods.includes("insects");
 });
-diet.forEach((diet)=> console.log(diet.Name,diet.foods));
+diet.forEach((diet) => console.log(diet.Name,diet.foods));
