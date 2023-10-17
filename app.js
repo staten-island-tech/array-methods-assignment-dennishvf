@@ -4,7 +4,7 @@ const Elephants = {
   Fur: "No",
   Diet: "Herbivore",
   Status: "Endangered",
-  foods:["grass", "leaves","fruits",]
+  foods: ["grass", "leaves", "fruits"],
 };
 const Lemurs = {
   Name: "Lemur",
@@ -12,7 +12,7 @@ const Lemurs = {
   Fur: "Yes",
   Diet: "Omnivore",
   Status: "Endangered",
-  foods:["insects", "leaves","fruits",]
+  foods: ["insects", "leaves", "fruits"],
 };
 const Lizards = {
   Name: "Lizard",
@@ -20,7 +20,7 @@ const Lizards = {
   Fur: "No",
   Diet: "Omnivore",
   Status: "Abundant",
-  foods:["insects","fruits",]
+  foods: ["insects", "fruits"],
 };
 const Penguins = {
   Name: "Penguin",
@@ -28,7 +28,7 @@ const Penguins = {
   Fur: "Yes",
   Diet: "Carnivore",
   Status: "Abundant",
-  foods:["Fish", "Snow"]
+  foods: ["Fish", "Snow"],
 };
 const Salmon = {
   Name: "Salmon",
@@ -36,12 +36,17 @@ const Salmon = {
   Fur: "No",
   Diet: "Omnivore",
   Status: "Abundant",
-  foods:["insects","Fish",]
+  foods: ["insects", "Fish"],
 };
 let animals = [Elephants, Lemurs, Lizards, Penguins, Salmon];
 animals.forEach((animal) => console.log(animal.Name));
-animals.forEach((animal)=>console.log(animal.Name,animal.foods,));
-const diet = animals.filter(animal => {
+animals.forEach((animals) => {
+  const yum = animals.foods;
+  yum.forEach((food) => {
+    console.log(food);
+  });
+});
+const diet = animals.filter((animal) => {
   return animal.foods.includes("insects");
 });
-diet.forEach((diet) => console.log(diet.Name,diet.foods));
+diet.forEach((diet) => console.log(diet.Name, diet.foods));
