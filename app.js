@@ -41,8 +41,7 @@ const Salmon = {
 let animals = [Elephants, Lemurs, Lizards, Penguins, Salmon];
 animals.forEach((animal) => console.log(animal.Name));
 animals.forEach((animals) => {
-  const yum = animals.foods;
-  yum.forEach((food) => {
+  animals.foods.forEach((food) => {
     console.log(food);
   });
 });
